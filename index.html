@@ -4,26 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-<h1>welcome to my student portal</h1> 
-<h2>my daily routine</h2>
-<ol>
-    <li>waking up at 8:00 am</li>
-    <li>taking bath</li>
-    <li>wearing clothes</li>
-    <li>going to school</li>
-    <li>attend classes</li>
-    <li>study</li>
+    <link rel="stylesheet" href="style.css">
 
-</ol>
-<ul>
-    <h3>my hobbies</h3>
-    <li>reading</li>
-    <li>coding</li>
-    <li>sports</li>
-</ul>
-<a href="timetable.html">timetable</a>
-<a href="contact.html">contact</a>
-</body>
+    <style>
+      nav {
+        background-color: aqua;
+        padding: 10px;
+      } 
+      nav ul{
+        list-style: none;
+      }
+      nav ul li{
+        display: inline;
+        margin-right: 15px;
+
+      }
+      nav ul li a{
+        color: white;
+
+      }
+      nav ul li a:hover{
+        color: greenyellow;
+      }
+      h2{
+        color: darkblue;
+        text-transform: uppercase;
+      }
+ 
+    </style>
+</head>
+
+<body>
+   <header id="header">
+        <h1 style="color:purple;">Cecilia Stephen</h1>
+        <p>Web Development Student</p>
+   </header> 
+   <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#routine">Routine</a></li>
+        </ul>
+   </nav>
+   
+   <section id="about" class="section">
+    <h2>about me</h2>
+    <p> My name is cecilia, I am learning Web Development</p>
+    <img src="Images/Screenshot 2026-05-12 162901.png" alt="my Images" style="width: 500px;" style="height: 500px;">
+   </section>
+
+   <section id="skills" class="Skills">
+    <h2>skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+    </ul>
+    
+   </section>
+
+   <section id="routine" class="Routine">
+    <h2>Daily Routine</h2>
+    <ol>
+        <li>Wake up</li>
+         <li>Study</li>
+          <li>Attend Class</li>
+           <li>Practise coding</li>
+
+    </ol>
+
+   </section>
 </html>
