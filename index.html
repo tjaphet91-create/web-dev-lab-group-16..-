@@ -1,74 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB 4 CSS Layout</title>
+    <title>Student Grade Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    -- Fixed Header --
-    <header>
-        <h1>CSS Layout Control</h1>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contacts</a>
-    </nav>
-
-    -- Part 1 Box Model --
-    <section class="boxes">
-
-        <div class="box">
-            <h2>Box One</h2>
-            <p>This box shows padding, border, and margin.</p>
+    <div class="calculator-container">
+        <h2>Student Grade Calculator</h2>
+        
+        <div class="input-group">
+            <label for="scoreInput">Enter Student Score (0 - 100):</label>
+            <input type="number" id="scoreInput" placeholder="example 85" min="0" max="100">
 
         </div>
 
-        <div class="box">
-            <h2>Box Two</h2>
-            <p>Margins create space between boxes.</p>
-        </div>
+        <button id="calcBtn">Calculate Grade</button>
 
-        <div class="box">
-            <h2>Box Three</h2>
-            <p>Padding creates space inside the box.</p>
-        </div>
+        <div id="results" class="results-container"></div>
+    </div>
 
-    </section>
-
-    <section class="position-container">
-        <span class="label">NEW</span>
-
-        <p>
-            This section shows relative and absolute positioning.
-        </p>
-    </section>
-
-    
-    <section class="main-content">
-        <h2>Main Content</h2>
-        <p>
-            This is the main content section floated to the left.
-        </p>
-    </section>
-
-    <aside class="sidebar">
-
-        <h2>Sidebar</h2>
-        <p>
-            This sidebar is floated to the right.
-        </p>
-    </aside>
-
-   
-    <footer>
-        <p>Footer Section</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+

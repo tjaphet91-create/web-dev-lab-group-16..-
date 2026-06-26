@@ -1,96 +1,111 @@
-/* General Styling */
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c2d7d0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-header {
-    background-color: rgb(153, 230, 218);
-    color: rgb(244, 242, 241);
-    text-align: center;
-    padding: 20px;
-
-    position: fixed;
-    top: 0;
+/* Calculator Card Layout */
+.calculator-container {
+    background-color: #97770e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-}
-
-nav {
-    background-color: rgb(106, 117, 44);
-    padding: 15px;
-
-    position: sticky;
-    top: 80px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-
-}
-
-
-.boxes {
-    margin-top: 150px;
-}
-
-/* Box Model */
-.box {
-    border: 25px solid rgb(95, 59, 59);
-    padding: 30px;
-    margin: 50px;
-    background-color: rgb(207, 205, 205);
-}
-
-/* Positioning */
-.position-container {
-    position: relative;
-
-    border: 2px solid rgb(37, 37, 54);
-    padding: 30px;
-    margin: 20px;
-}
-
-/* Absolute Label */
-.label {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    background-color: red;
-    color: white;
-
-    padding: 5px;
-}
-
-/* Float Layout */
-.main-content {
-    float: left;
-    width: 65%;
-
-    background-color: lightblue;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.sidebar {
-    float: right;
-    width: 30%;
-
-    background-color: rgb(123, 153, 123);
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Clear Float */
-footer {
-    clear: both;
-
-    background-color: gray;
-    color: white;
+    max-width: 400px;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    border: 1px solid #e0e0e0;
 }
+
+h2 {
+
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    background-color: #eb3535;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Results Section */
+.results-container {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+/* Dynamic Classes for Validation & Extensions */
+.error {
+
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+/* Grade-specific coloring */
+.grade-A { color: #2e7d32; font-weight: bold; }
+.grade-B { color: #1565c0; font-weight: bold; }
+.grade-C { color: #f57f17; font-weight: bold; }
+.grade-D { color: #e65100; font-weight: bold; }
+
+.grade-F { color: #c62828; font-weight: bold; }
+
+
